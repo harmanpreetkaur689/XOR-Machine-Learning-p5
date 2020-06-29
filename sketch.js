@@ -17,10 +17,12 @@ let training_data=[
       targets:[0]
    }
 ];
+let width=innerWidth;
+let height=innerHeight;
 let nn;
 function setup(){
    nn=new neuralNetwork(2,16,1);
-   createCanvas(400,400);
+   createCanvas(width,height);
    /*var inputs=[1,0];
    var targets=[1];
    nn.train(inputs,targets);*/
